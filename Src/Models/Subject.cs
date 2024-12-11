@@ -7,21 +7,21 @@ namespace CareerService.Src.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; } = string.Empty;
+        public string Id { get; set; }
 
-        [BsonElement("Code")]
-        public string Code { get; set; } = string.Empty;
+        [BsonElement("code")]
+        public string Code { get; set; }
 
-        [BsonElement("Name")]
-        public string Name { get; set; } = string.Empty;
+        [BsonElement("name")]
+        public string Name { get; set; }
 
-        [BsonElement("Department")]
-        public string Department { get; set; } = string.Empty;
+        [BsonElement("department")]
+        public string Department { get; set; }
 
-        [BsonElement("Credits")]
+        [BsonElement("credits")]
         public int Credits { get; set; }
 
-        [BsonElement("Semester")]
+        [BsonElement("semester")]
         public int Semester { get; set; }
     }
 }

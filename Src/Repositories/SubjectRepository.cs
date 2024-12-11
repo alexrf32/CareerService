@@ -5,16 +5,17 @@ namespace CareerService.Src.Repositories
 {
     public class SubjectRepository
     {
-        private readonly IMongoCollection<Subject> _subjectsCollection;
+        private readonly IMongoCollection<Subject> _subjects;
 
         public SubjectRepository(IMongoDatabase database)
         {
-            _subjectsCollection = database.GetCollection<Subject>("Subjects");
+            _subjects = database.GetCollection<Subject>("Subject");
         }
 
         public async Task<List<Subject>> GetAllSubjectsAsync()
         {
-            return await _subjectsCollection.Find(s => true).ToListAsync();
+            return await _subjects.Find(_ => true).ToListAsync();
         }
     }
 }
+

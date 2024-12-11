@@ -1,6 +1,7 @@
 using CareerService.Protos;
 using CareerService.Src.Repositories;
 using Grpc.Core;
+using Google.Protobuf.WellKnownTypes;
 
 namespace CareerService.Src.Services
 {
@@ -25,6 +26,23 @@ namespace CareerService.Src.Services
             }));
 
             return response;
+        }
+
+        public class Protos
+        {
+            public class SubjectService
+            {
+                public class SubjectServiceBase
+                {
+                }
+            }
+
+            public class SubjectRelationshipService
+            {
+                public class SubjectRelationshipServiceBase
+                {
+                }
+            }
         }
     }
 }
