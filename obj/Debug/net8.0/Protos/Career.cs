@@ -24,30 +24,44 @@ namespace CareerService.Protos {
     static CareerReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChNQcm90b3MvY2FyZWVyLnByb3RvIjAKBkNhcmVlchIKCgJpZBgBIAEoCRIM",
-            "CgRuYW1lGAIgASgJEgwKBGNvZGUYAyABKAkiJgoKQ2FyZWVyTGlzdBIYCgdj",
-            "YXJlZXJzGAEgAygLMgcuQ2FyZWVyImgKB1N1YmplY3QSCgoCaWQYASABKAkS",
-            "DAoEY29kZRgCIAEoCRIMCgRuYW1lGAMgASgJEhIKCmRlcGFydG1lbnQYBCAB",
-            "KAkSDwoHY3JlZGl0cxgFIAEoBRIQCghzZW1lc3RlchgGIAEoBSIpCgtTdWJq",
-            "ZWN0TGlzdBIaCghzdWJqZWN0cxgBIAMoCzIILlN1YmplY3QiBwoFRW1wdHky",
-            "NQoNQ2FyZWVyU2VydmljZRIkCg1HZXRBbGxDYXJlZXJzEgYuRW1wdHkaCy5D",
-            "YXJlZXJMaXN0MjgKDlN1YmplY3RTZXJ2aWNlEiYKDkdldEFsbFN1YmplY3Rz",
-            "EgYuRW1wdHkaDC5TdWJqZWN0TGlzdEIXqgIUQ2FyZWVyU2VydmljZS5Qcm90",
-            "b3NiBnByb3RvMw=="));
+            "ChNQcm90b3MvY2FyZWVyLnByb3RvEhRDYXJlZXJTZXJ2aWNlLlByb3Rvcxob",
+            "Z29vZ2xlL3Byb3RvYnVmL2VtcHR5LnByb3RvIiIKBkNhcmVlchIKCgJpZBgB",
+            "IAEoCRIMCgRuYW1lGAIgASgJIjsKCkNhcmVlckxpc3QSLQoHY2FyZWVycxgB",
+            "IAMoCzIcLkNhcmVlclNlcnZpY2UuUHJvdG9zLkNhcmVlciJoCgdTdWJqZWN0",
+            "EgoKAmlkGAEgASgJEgwKBGNvZGUYAiABKAkSDAoEbmFtZRgDIAEoCRISCgpk",
+            "ZXBhcnRtZW50GAQgASgJEg8KB2NyZWRpdHMYBSABKAUSEAoIc2VtZXN0ZXIY",
+            "BiABKAUiPgoLU3ViamVjdExpc3QSLwoIc3ViamVjdHMYASADKAsyHS5DYXJl",
+            "ZXJTZXJ2aWNlLlByb3Rvcy5TdWJqZWN0Ik4KE1N1YmplY3RSZWxhdGlvbnNo",
+            "aXASCgoCaWQYASABKAkSFgoOcHJlU3ViamVjdENvZGUYAiABKAkSEwoLc3Vi",
+            "amVjdENvZGUYAyABKAkiYgoXU3ViamVjdFJlbGF0aW9uc2hpcExpc3QSRwoU",
+            "c3ViamVjdFJlbGF0aW9uc2hpcHMYASADKAsyKS5DYXJlZXJTZXJ2aWNlLlBy",
+            "b3Rvcy5TdWJqZWN0UmVsYXRpb25zaGlwMloKDUNhcmVlclNlcnZpY2USSQoN",
+            "R2V0QWxsQ2FyZWVycxIWLmdvb2dsZS5wcm90b2J1Zi5FbXB0eRogLkNhcmVl",
+            "clNlcnZpY2UuUHJvdG9zLkNhcmVlckxpc3QyXQoOU3ViamVjdFNlcnZpY2US",
+            "SwoOR2V0QWxsU3ViamVjdHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaIS5D",
+            "YXJlZXJTZXJ2aWNlLlByb3Rvcy5TdWJqZWN0TGlzdDKBAQoaU3ViamVjdFJl",
+            "bGF0aW9uc2hpcFNlcnZpY2USYwoaR2V0QWxsU3ViamVjdFJlbGF0aW9uc2hp",
+            "cHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaLS5DYXJlZXJTZXJ2aWNlLlBy",
+            "b3Rvcy5TdWJqZWN0UmVsYXRpb25zaGlwTGlzdGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.EmptyReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.Career), global::CareerService.Protos.Career.Parser, new[]{ "Id", "Name", "Code" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.Career), global::CareerService.Protos.Career.Parser, new[]{ "Id", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.CareerList), global::CareerService.Protos.CareerList.Parser, new[]{ "Careers" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.Subject), global::CareerService.Protos.Subject.Parser, new[]{ "Id", "Code", "Name", "Department", "Credits", "Semester" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.SubjectList), global::CareerService.Protos.SubjectList.Parser, new[]{ "Subjects" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.Empty), global::CareerService.Protos.Empty.Parser, null, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.SubjectRelationship), global::CareerService.Protos.SubjectRelationship.Parser, new[]{ "Id", "PreSubjectCode", "SubjectCode" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::CareerService.Protos.SubjectRelationshipList), global::CareerService.Protos.SubjectRelationshipList.Parser, new[]{ "SubjectRelationships" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
   #region Messages
+  /// <summary>
+  /// Definiciones relacionadas con CareerService
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Career : pb::IMessage<Career>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -84,7 +98,6 @@ namespace CareerService.Protos {
     public Career(Career other) : this() {
       id_ = other.id_;
       name_ = other.name_;
-      code_ = other.code_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -97,6 +110,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// ID único de la carrera
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -109,24 +125,15 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 2;
     private string name_ = "";
+    /// <summary>
+    /// Nombre de la carrera
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
       get { return name_; }
       set {
         name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
-      }
-    }
-
-    /// <summary>Field number for the "code" field.</summary>
-    public const int CodeFieldNumber = 3;
-    private string code_ = "";
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Code {
-      get { return code_; }
-      set {
-        code_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -147,7 +154,6 @@ namespace CareerService.Protos {
       }
       if (Id != other.Id) return false;
       if (Name != other.Name) return false;
-      if (Code != other.Code) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -157,7 +163,6 @@ namespace CareerService.Protos {
       int hash = 1;
       if (Id.Length != 0) hash ^= Id.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
-      if (Code.Length != 0) hash ^= Code.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -184,10 +189,6 @@ namespace CareerService.Protos {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
-      if (Code.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Code);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -206,10 +207,6 @@ namespace CareerService.Protos {
         output.WriteRawTag(18);
         output.WriteString(Name);
       }
-      if (Code.Length != 0) {
-        output.WriteRawTag(26);
-        output.WriteString(Code);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -225,9 +222,6 @@ namespace CareerService.Protos {
       }
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
-      }
-      if (Code.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Code);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -247,9 +241,6 @@ namespace CareerService.Protos {
       if (other.Name.Length != 0) {
         Name = other.Name;
       }
-      if (other.Code.Length != 0) {
-        Code = other.Code;
-      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -261,7 +252,11 @@ namespace CareerService.Protos {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -271,10 +266,6 @@ namespace CareerService.Protos {
           }
           case 18: {
             Name = input.ReadString();
-            break;
-          }
-          case 26: {
-            Code = input.ReadString();
             break;
           }
         }
@@ -288,7 +279,11 @@ namespace CareerService.Protos {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -300,10 +295,6 @@ namespace CareerService.Protos {
             Name = input.ReadString();
             break;
           }
-          case 26: {
-            Code = input.ReadString();
-            break;
-          }
         }
       }
     }
@@ -311,6 +302,7 @@ namespace CareerService.Protos {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CareerList : pb::IMessage<CareerList>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -360,6 +352,9 @@ namespace CareerService.Protos {
     private static readonly pb::FieldCodec<global::CareerService.Protos.Career> _repeated_careers_codec
         = pb::FieldCodec.ForMessage(10, global::CareerService.Protos.Career.Parser);
     private readonly pbc::RepeatedField<global::CareerService.Protos.Career> careers_ = new pbc::RepeatedField<global::CareerService.Protos.Career>();
+    /// <summary>
+    /// Lista de carreras
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::CareerService.Protos.Career> Careers {
@@ -455,7 +450,11 @@ namespace CareerService.Protos {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -474,7 +473,11 @@ namespace CareerService.Protos {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -489,6 +492,10 @@ namespace CareerService.Protos {
 
   }
 
+  /// <summary>
+  /// Definiciones relacionadas con SubjectService
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class Subject : pb::IMessage<Subject>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -541,6 +548,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
     private string id_ = "";
+    /// <summary>
+    /// ID único de la asignatura
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Id {
@@ -553,6 +563,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "code" field.</summary>
     public const int CodeFieldNumber = 2;
     private string code_ = "";
+    /// <summary>
+    /// Código de la asignatura
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Code {
@@ -565,6 +578,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "name" field.</summary>
     public const int NameFieldNumber = 3;
     private string name_ = "";
+    /// <summary>
+    /// Nombre de la asignatura
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Name {
@@ -577,6 +593,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "department" field.</summary>
     public const int DepartmentFieldNumber = 4;
     private string department_ = "";
+    /// <summary>
+    /// Departamento responsable
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Department {
@@ -589,6 +608,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "credits" field.</summary>
     public const int CreditsFieldNumber = 5;
     private int credits_;
+    /// <summary>
+    /// Créditos de la asignatura
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Credits {
@@ -601,6 +623,9 @@ namespace CareerService.Protos {
     /// <summary>Field number for the "semester" field.</summary>
     public const int SemesterFieldNumber = 6;
     private int semester_;
+    /// <summary>
+    /// Semestre de la asignatura
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Semester {
@@ -789,7 +814,11 @@ namespace CareerService.Protos {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -828,7 +857,11 @@ namespace CareerService.Protos {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -863,6 +896,7 @@ namespace CareerService.Protos {
 
   }
 
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SubjectList : pb::IMessage<SubjectList>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -912,6 +946,9 @@ namespace CareerService.Protos {
     private static readonly pb::FieldCodec<global::CareerService.Protos.Subject> _repeated_subjects_codec
         = pb::FieldCodec.ForMessage(10, global::CareerService.Protos.Subject.Parser);
     private readonly pbc::RepeatedField<global::CareerService.Protos.Subject> subjects_ = new pbc::RepeatedField<global::CareerService.Protos.Subject>();
+    /// <summary>
+    /// Lista de asignaturas
+    /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::CareerService.Protos.Subject> Subjects {
@@ -1007,7 +1044,11 @@ namespace CareerService.Protos {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
@@ -1026,7 +1067,11 @@ namespace CareerService.Protos {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
@@ -1041,16 +1086,20 @@ namespace CareerService.Protos {
 
   }
 
-  public sealed partial class Empty : pb::IMessage<Empty>
+  /// <summary>
+  /// Definiciones relacionadas con SubjectRelationshipService
+  /// </summary>
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SubjectRelationship : pb::IMessage<SubjectRelationship>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<Empty> _parser = new pb::MessageParser<Empty>(() => new Empty());
+    private static readonly pb::MessageParser<SubjectRelationship> _parser = new pb::MessageParser<SubjectRelationship>(() => new SubjectRelationship());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Empty> Parser { get { return _parser; } }
+    public static pb::MessageParser<SubjectRelationship> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1066,7 +1115,7 @@ namespace CareerService.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Empty() {
+    public SubjectRelationship() {
       OnConstruction();
     }
 
@@ -1074,31 +1123,82 @@ namespace CareerService.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Empty(Empty other) : this() {
+    public SubjectRelationship(SubjectRelationship other) : this() {
+      id_ = other.id_;
+      preSubjectCode_ = other.preSubjectCode_;
+      subjectCode_ = other.subjectCode_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Empty Clone() {
-      return new Empty(this);
+    public SubjectRelationship Clone() {
+      return new SubjectRelationship(this);
+    }
+
+    /// <summary>Field number for the "id" field.</summary>
+    public const int IdFieldNumber = 1;
+    private string id_ = "";
+    /// <summary>
+    /// ID único de la relación
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Id {
+      get { return id_; }
+      set {
+        id_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "preSubjectCode" field.</summary>
+    public const int PreSubjectCodeFieldNumber = 2;
+    private string preSubjectCode_ = "";
+    /// <summary>
+    /// Código de la asignatura previa
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string PreSubjectCode {
+      get { return preSubjectCode_; }
+      set {
+        preSubjectCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "subjectCode" field.</summary>
+    public const int SubjectCodeFieldNumber = 3;
+    private string subjectCode_ = "";
+    /// <summary>
+    /// Código de la asignatura actual
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string SubjectCode {
+      get { return subjectCode_; }
+      set {
+        subjectCode_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
-      return Equals(other as Empty);
+      return Equals(other as SubjectRelationship);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Empty other) {
+    public bool Equals(SubjectRelationship other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Id != other.Id) return false;
+      if (PreSubjectCode != other.PreSubjectCode) return false;
+      if (SubjectCode != other.SubjectCode) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1106,6 +1206,9 @@ namespace CareerService.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Id.Length != 0) hash ^= Id.GetHashCode();
+      if (PreSubjectCode.Length != 0) hash ^= PreSubjectCode.GetHashCode();
+      if (SubjectCode.Length != 0) hash ^= SubjectCode.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1124,6 +1227,18 @@ namespace CareerService.Protos {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (PreSubjectCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PreSubjectCode);
+      }
+      if (SubjectCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SubjectCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1134,6 +1249,18 @@ namespace CareerService.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Id.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Id);
+      }
+      if (PreSubjectCode.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PreSubjectCode);
+      }
+      if (SubjectCode.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(SubjectCode);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1144,6 +1271,15 @@ namespace CareerService.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Id.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Id);
+      }
+      if (PreSubjectCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PreSubjectCode);
+      }
+      if (SubjectCode.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SubjectCode);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -1152,9 +1288,18 @@ namespace CareerService.Protos {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Empty other) {
+    public void MergeFrom(SubjectRelationship other) {
       if (other == null) {
         return;
+      }
+      if (other.Id.Length != 0) {
+        Id = other.Id;
+      }
+      if (other.PreSubjectCode.Length != 0) {
+        PreSubjectCode = other.PreSubjectCode;
+      }
+      if (other.SubjectCode.Length != 0) {
+        SubjectCode = other.SubjectCode;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1167,10 +1312,26 @@ namespace CareerService.Protos {
     #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            PreSubjectCode = input.ReadString();
+            break;
+          }
+          case 26: {
+            SubjectCode = input.ReadString();
+            break;
+          }
         }
       }
     #endif
@@ -1182,10 +1343,216 @@ namespace CareerService.Protos {
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 10: {
+            Id = input.ReadString();
+            break;
+          }
+          case 18: {
+            PreSubjectCode = input.ReadString();
+            break;
+          }
+          case 26: {
+            SubjectCode = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SubjectRelationshipList : pb::IMessage<SubjectRelationshipList>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SubjectRelationshipList> _parser = new pb::MessageParser<SubjectRelationshipList>(() => new SubjectRelationshipList());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SubjectRelationshipList> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::CareerService.Protos.CareerReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SubjectRelationshipList() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SubjectRelationshipList(SubjectRelationshipList other) : this() {
+      subjectRelationships_ = other.subjectRelationships_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SubjectRelationshipList Clone() {
+      return new SubjectRelationshipList(this);
+    }
+
+    /// <summary>Field number for the "subjectRelationships" field.</summary>
+    public const int SubjectRelationshipsFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::CareerService.Protos.SubjectRelationship> _repeated_subjectRelationships_codec
+        = pb::FieldCodec.ForMessage(10, global::CareerService.Protos.SubjectRelationship.Parser);
+    private readonly pbc::RepeatedField<global::CareerService.Protos.SubjectRelationship> subjectRelationships_ = new pbc::RepeatedField<global::CareerService.Protos.SubjectRelationship>();
+    /// <summary>
+    /// Lista de relaciones entre asignaturas
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::CareerService.Protos.SubjectRelationship> SubjectRelationships {
+      get { return subjectRelationships_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SubjectRelationshipList);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SubjectRelationshipList other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!subjectRelationships_.Equals(other.subjectRelationships_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= subjectRelationships_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      subjectRelationships_.WriteTo(output, _repeated_subjectRelationships_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      subjectRelationships_.WriteTo(ref output, _repeated_subjectRelationships_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += subjectRelationships_.CalculateSize(_repeated_subjectRelationships_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SubjectRelationshipList other) {
+      if (other == null) {
+        return;
+      }
+      subjectRelationships_.Add(other.subjectRelationships_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            subjectRelationships_.AddEntriesFrom(input, _repeated_subjectRelationships_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+      if ((tag & 7) == 4) {
+        // Abort on any end group tag.
+        return;
+      }
+      switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            subjectRelationships_.AddEntriesFrom(ref input, _repeated_subjectRelationships_codec);
+            break;
+          }
         }
       }
     }

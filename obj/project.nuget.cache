@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "oSsNvhBPGzY=",
+  "dgSpecHash": "Q+vi+6LBjjc=",
   "success": true,
   "projectFilePath": "C:\\Users\\aawrf\\OneDrive\\Escritorio\\CareerService\\CareerService\\CareerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aawrf\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
-    "C:\\Users\\aawrf\\.nuget\\packages\\google.protobuf\\3.23.1\\google.protobuf.3.23.1.nupkg.sha512",
+    "C:\\Users\\aawrf\\.nuget\\packages\\google.protobuf\\3.29.1\\google.protobuf.3.29.1.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.aspnetcore\\2.57.0\\grpc.aspnetcore.2.57.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.aspnetcore.server\\2.57.0\\grpc.aspnetcore.server.2.57.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.57.0\\grpc.aspnetcore.server.clientfactory.2.57.0.nupkg.sha512",
@@ -15,7 +15,7 @@
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.net.clientfactory\\2.57.0\\grpc.net.clientfactory.2.57.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.net.common\\2.57.0\\grpc.net.common.2.57.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\grpc.reflection\\2.57.0\\grpc.reflection.2.57.0.nupkg.sha512",
-    "C:\\Users\\aawrf\\.nuget\\packages\\grpc.tools\\2.57.0\\grpc.tools.2.57.0.nupkg.sha512",
+    "C:\\Users\\aawrf\\.nuget\\packages\\grpc.tools\\2.68.1\\grpc.tools.2.68.1.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.0\\microsoft.aspnetcore.authorization.8.0.0.nupkg.sha512",
     "C:\\Users\\aawrf\\.nuget\\packages\\microsoft.aspnetcore.metadata\\8.0.0\\microsoft.aspnetcore.metadata.8.0.0.nupkg.sha512",

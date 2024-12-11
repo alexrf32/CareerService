@@ -5,16 +5,17 @@ namespace CareerService.Src.Repositories
 {
     public class SubjectRelationshipRepository
     {
-        private readonly IMongoCollection<SubjectRelationship> _relationshipsCollection;
+        private readonly IMongoCollection<SubjectRelationship> _subjectRelationships;
 
         public SubjectRelationshipRepository(IMongoDatabase database)
         {
-            _relationshipsCollection = database.GetCollection<SubjectRelationship>("SubjectRelationships");
+            _subjectRelationships = database.GetCollection<SubjectRelationship>("SubjectRelationships");
         }
 
-        public async Task<List<SubjectRelationship>> GetAllRelationshipsAsync()
+        public async Task<List<SubjectRelationship>> GetAllSubjectRelationshipsAsync()
         {
-            return await _relationshipsCollection.Find(r => true).ToListAsync();
+            return await _subjectRelationships.Find(_ => true).ToListAsync();
         }
     }
 }
+

@@ -8,9 +8,12 @@
 using grpc = global::Grpc.Core;
 
 namespace CareerService.Protos {
+  /// <summary>
+  /// Servicio para gestionar carreras
+  /// </summary>
   public static partial class CareerService
   {
-    static readonly string __ServiceName = "CareerService";
+    static readonly string __ServiceName = "CareerService.Protos.CareerService";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -46,17 +49,17 @@ namespace CareerService.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CareerService.Protos.Empty> __Marshaller_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.Empty.Parser));
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CareerService.Protos.CareerList> __Marshaller_CareerList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.CareerList.Parser));
+    static readonly grpc::Marshaller<global::CareerService.Protos.CareerList> __Marshaller_CareerService_Protos_CareerList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.CareerList.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::CareerService.Protos.Empty, global::CareerService.Protos.CareerList> __Method_GetAllCareers = new grpc::Method<global::CareerService.Protos.Empty, global::CareerService.Protos.CareerList>(
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.CareerList> __Method_GetAllCareers = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.CareerList>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllCareers",
-        __Marshaller_Empty,
-        __Marshaller_CareerList);
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_CareerService_Protos_CareerList);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -68,8 +71,14 @@ namespace CareerService.Protos {
     [grpc::BindServiceMethod(typeof(CareerService), "BindService")]
     public abstract partial class CareerServiceBase
     {
+      /// <summary>
+      /// Obtiene todas las carreras
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::CareerService.Protos.CareerList> GetAllCareers(global::CareerService.Protos.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::CareerService.Protos.CareerList> GetAllCareers(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -92,13 +101,16 @@ namespace CareerService.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, CareerServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllCareers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CareerService.Protos.Empty, global::CareerService.Protos.CareerList>(serviceImpl.GetAllCareers));
+      serviceBinder.AddMethod(__Method_GetAllCareers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.CareerList>(serviceImpl.GetAllCareers));
     }
 
   }
+  /// <summary>
+  /// Servicio para gestionar asignaturas
+  /// </summary>
   public static partial class SubjectService
   {
-    static readonly string __ServiceName = "SubjectService";
+    static readonly string __ServiceName = "CareerService.Protos.SubjectService";
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
@@ -134,17 +146,17 @@ namespace CareerService.Protos {
     }
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CareerService.Protos.Empty> __Marshaller_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.Empty.Parser));
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Marshaller<global::CareerService.Protos.SubjectList> __Marshaller_SubjectList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.SubjectList.Parser));
+    static readonly grpc::Marshaller<global::CareerService.Protos.SubjectList> __Marshaller_CareerService_Protos_SubjectList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.SubjectList.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-    static readonly grpc::Method<global::CareerService.Protos.Empty, global::CareerService.Protos.SubjectList> __Method_GetAllSubjects = new grpc::Method<global::CareerService.Protos.Empty, global::CareerService.Protos.SubjectList>(
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectList> __Method_GetAllSubjects = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectList>(
         grpc::MethodType.Unary,
         __ServiceName,
         "GetAllSubjects",
-        __Marshaller_Empty,
-        __Marshaller_SubjectList);
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_CareerService_Protos_SubjectList);
 
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
@@ -156,8 +168,14 @@ namespace CareerService.Protos {
     [grpc::BindServiceMethod(typeof(SubjectService), "BindService")]
     public abstract partial class SubjectServiceBase
     {
+      /// <summary>
+      /// Obtiene todas las asignaturas
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
-      public virtual global::System.Threading.Tasks.Task<global::CareerService.Protos.SubjectList> GetAllSubjects(global::CareerService.Protos.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::CareerService.Protos.SubjectList> GetAllSubjects(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -180,7 +198,104 @@ namespace CareerService.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     public static void BindService(grpc::ServiceBinderBase serviceBinder, SubjectServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_GetAllSubjects, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::CareerService.Protos.Empty, global::CareerService.Protos.SubjectList>(serviceImpl.GetAllSubjects));
+      serviceBinder.AddMethod(__Method_GetAllSubjects, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectList>(serviceImpl.GetAllSubjects));
+    }
+
+  }
+  /// <summary>
+  /// Servicio para gestionar relaciones entre asignaturas
+  /// </summary>
+  public static partial class SubjectRelationshipService
+  {
+    static readonly string __ServiceName = "CareerService.Protos.SubjectRelationshipService";
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.Empty> __Marshaller_google_protobuf_Empty = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.Empty.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::CareerService.Protos.SubjectRelationshipList> __Marshaller_CareerService_Protos_SubjectRelationshipList = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::CareerService.Protos.SubjectRelationshipList.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectRelationshipList> __Method_GetAllSubjectRelationships = new grpc::Method<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectRelationshipList>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAllSubjectRelationships",
+        __Marshaller_google_protobuf_Empty,
+        __Marshaller_CareerService_Protos_SubjectRelationshipList);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::CareerService.Protos.CareerReflection.Descriptor.Services[2]; }
+    }
+
+    /// <summary>Base class for server-side implementations of SubjectRelationshipService</summary>
+    [grpc::BindServiceMethod(typeof(SubjectRelationshipService), "BindService")]
+    public abstract partial class SubjectRelationshipServiceBase
+    {
+      /// <summary>
+      /// Obtiene todas las relaciones entre asignaturas
+      /// </summary>
+      /// <param name="request">The request received from the client.</param>
+      /// <param name="context">The context of the server-side call handler being invoked.</param>
+      /// <returns>The response to send back to the client (wrapped by a task).</returns>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::CareerService.Protos.SubjectRelationshipList> GetAllSubjectRelationships(global::Google.Protobuf.WellKnownTypes.Empty request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+    }
+
+    /// <summary>Creates service definition that can be registered with a server</summary>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static grpc::ServerServiceDefinition BindService(SubjectRelationshipServiceBase serviceImpl)
+    {
+      return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GetAllSubjectRelationships, serviceImpl.GetAllSubjectRelationships).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, SubjectRelationshipServiceBase serviceImpl)
+    {
+      serviceBinder.AddMethod(__Method_GetAllSubjectRelationships, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Google.Protobuf.WellKnownTypes.Empty, global::CareerService.Protos.SubjectRelationshipList>(serviceImpl.GetAllSubjectRelationships));
     }
 
   }

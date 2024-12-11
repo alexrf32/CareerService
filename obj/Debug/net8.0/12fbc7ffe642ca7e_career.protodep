@@ -1,2 +1,3 @@
 obj\Debug\net8.0\Protos/Career.cs \
-obj\Debug\net8.0\Protos/CareerGrpc.cs: Protos/career.proto
+obj\Debug\net8.0\Protos/CareerGrpc.cs: C:/Users/aawrf/.nuget/packages/grpc.tools/2.68.1/build/native/include/google/protobuf/empty.proto\
+ Protos/career.proto

@@ -34,6 +34,7 @@ C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\CareerService.AssemblyInfo.cs
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\CareerService.csproj.CoreCompileInputs.cache
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\CareerService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\CareerService.sourcelink.json
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\obj\Debug\net8.0\staticwebassets\msbuild.CareerService.Microsoft.AspNetCore.StaticWebAssets.props
