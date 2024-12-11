@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option csharp_namespace = "CareerService.Protos";
+
+service CareerService {
+  rpc GetAllCareers (Empty) returns (CareerList);
+}
+
+service SubjectService {
+  rpc GetAllSubjects (Empty) returns (SubjectList);
+}
+
+message Career {
+  string id = 1;
+  string name = 2;
+  string code = 3;
+}
+
+message CareerList {
+  repeated Career careers = 1;
+}
+
+message Subject {
+  string id = 1;
+  string code = 2;
+  string name = 3;
+  string department = 4;
+  int32 credits = 5;
+  int32 semester = 6;
+}
+
+message SubjectList {
+  repeated Subject subjects = 1;
+}
+
+message Empty {}

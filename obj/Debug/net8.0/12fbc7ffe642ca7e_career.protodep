@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Career.cs \
+obj\Debug\net8.0\Protos/CareerGrpc.cs: Protos/career.proto
