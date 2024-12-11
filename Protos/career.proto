@@ -1,36 +1,58 @@
 syntax = "proto3";
 
-option csharp_namespace = "CareerService.Protos";
+import "google/protobuf/empty.proto";
 
+package CareerService.Protos;
+
+// Servicio para gestionar carreras
 service CareerService {
-  rpc GetAllCareers (Empty) returns (CareerList);
+  // Obtiene todas las carreras
+  rpc GetAllCareers(google.protobuf.Empty) returns (CareerList);
 }
 
+// Servicio para gestionar asignaturas
 service SubjectService {
-  rpc GetAllSubjects (Empty) returns (SubjectList);
+  // Obtiene todas las asignaturas
+  rpc GetAllSubjects(google.protobuf.Empty) returns (SubjectList);
 }
 
+// Servicio para gestionar relaciones entre asignaturas
+service SubjectRelationshipService {
+  // Obtiene todas las relaciones entre asignaturas
+  rpc GetAllSubjectRelationships(google.protobuf.Empty) returns (SubjectRelationshipList);
+}
+
+// Definiciones relacionadas con CareerService
 message Career {
-  string id = 1;
-  string name = 2;
-  string code = 3;
+  string id = 1;   // ID único de la carrera
+  string name = 2; // Nombre de la carrera
 }
 
 message CareerList {
-  repeated Career careers = 1;
+  repeated Career careers = 1; // Lista de carreras
 }
 
+// Definiciones relacionadas con SubjectService
 message Subject {
-  string id = 1;
-  string code = 2;
-  string name = 3;
-  string department = 4;
-  int32 credits = 5;
-  int32 semester = 6;
+  string id = 1;         // ID único de la asignatura
+  string code = 2;       // Código de la asignatura
+  string name = 3;       // Nombre de la asignatura
+  string department = 4; // Departamento responsable
+  int32 credits = 5;     // Créditos de la asignatura
+  int32 semester = 6;    // Semestre de la asignatura
 }
 
 message SubjectList {
-  repeated Subject subjects = 1;
+  repeated Subject subjects = 1; // Lista de asignaturas
 }
 
-message Empty {}
+// Definiciones relacionadas con SubjectRelationshipService
+message SubjectRelationship {
+  string id = 1;            // ID único de la relación
+  string preSubjectCode = 2; // Código de la asignatura previa
+  string subjectCode = 3;    // Código de la asignatura actual
+}
+
+message SubjectRelationshipList {
+  repeated SubjectRelationship subjectRelationships = 1; // Lista de relaciones entre asignaturas
+}
