@@ -1,6 +1,8 @@
-using CareerService.Protos;
+using System.Threading.Tasks;
 using CareerService.Src.Repositories;
+using CareerService.Protos;
 using Grpc.Core;
+using Google.Protobuf.WellKnownTypes;
 
 namespace CareerService.Src.Services
 {
@@ -17,6 +19,9 @@ namespace CareerService.Src.Services
         {
             var subjects = await _subjectRepository.GetAllSubjectsAsync();
 
+            // Log temporal
+            Console.WriteLine($"Subjects retrieved: {subjects.Count}");
+
             var response = new SubjectList();
             response.Subjects.AddRange(subjects.Select(s => new Subject
             {
@@ -32,3 +37,4 @@ namespace CareerService.Src.Services
         }
     }
 }
+

@@ -7,12 +7,12 @@ namespace CareerService.Src.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; set; } = string.Empty;
-
-        [BsonElement("SubjectCode")]
-        public string SubjectCode { get; set; } = string.Empty;
+        public string Id { get; set; }
 
         [BsonElement("PreSubjectCode")]
-        public string PreSubjectCode { get; set; } = string.Empty;
+        public string PreSubjectCode { get; set; }
+
+        [BsonElement("SubjectCode")]
+        public string SubjectCode { get; set; }
     }
 }
