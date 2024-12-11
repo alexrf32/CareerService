@@ -60,6 +60,7 @@ app.UseAuthorization();
 // Mapear servicios gRPC
 app.MapGrpcService<CareerService.Src.Services.CareerService>();
 app.MapGrpcService<CareerService.Src.Services.SubjectService>();
+app.MapGrpcService<CareerService.Src.Services.SubjectRelationshipServiceImpl>();
 
 // Mapear el servicio de reflexión gRPC (solo en desarrollo)
 if (app.Environment.IsDevelopment())
