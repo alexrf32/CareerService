@@ -1,11 +1,13 @@
 using CareerService.Src.Data;
 using CareerService.Src.Repositories;
 using CareerService.Src.Services;
+using CareerService.Src.Services.RabbitMQ;
 using CareerService.Protos;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
+using RabbitMQ.Client;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +22,22 @@ builder.Services.AddSingleton(sp =>
     var client = new MongoClient(settings.ConnectionString);
     return client.GetDatabase(settings.DatabaseName);
 });
+
+// Configuración de RabbitMQ
+var rabbitConfig = builder.Configuration.GetSection("RabbitMQ");
+builder.Services.AddSingleton<IConnection>(sp =>
+{
+    var factory = new ConnectionFactory()
+    {
+        HostName = rabbitConfig["HostName"],
+        UserName = rabbitConfig["UserName"],
+        Password = rabbitConfig["Password"]
+    };
+    return factory.CreateConnection();
+});
+
+builder.Services.AddSingleton<QueueInitializer>();
+builder.Services.AddSingleton<MessagePublisher>();
 
 // Registrar repositorios
 builder.Services.AddSingleton<CareerRepository>();
@@ -52,6 +70,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
+// Inicializar colas de RabbitMQ
+using (var scope = app.Services.CreateScope())
+{
+    var queueInitializer = scope.ServiceProvider.GetRequiredService<QueueInitializer>();
+    queueInitializer.InitializeQueue(rabbitConfig["CareerQueue"]);
+    queueInitializer.InitializeQueue(rabbitConfig["SubjectQueue"]);
+    queueInitializer.InitializeQueue(rabbitConfig["RelationshipQueue"]);
+}
 
 // Middleware para manejar autenticación y autorización
 app.UseAuthentication();
