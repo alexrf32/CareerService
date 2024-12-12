@@ -14,5 +14,6 @@ namespace CareerService.Src.Models
 
         [BsonElement("SubjectCode")]
         public string SubjectCode { get; set; }
+        
     }
 }
