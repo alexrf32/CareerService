@@ -88,6 +88,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[3.1.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [

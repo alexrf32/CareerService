@@ -24,6 +24,7 @@ C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\MongoDB.Bson.dll
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\SharpCompress.dll
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\Snappier.dll
 C:\Users\aawrf\OneDrive\Escritorio\CareerService\CareerService\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
