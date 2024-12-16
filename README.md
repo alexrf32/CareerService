@@ -33,3 +33,20 @@ Clona el repositorio con el siguiente comando:
 
 ```bash
 git clone https://github.com/alexrf32/CareerService.git
+
+## Restaurar el Proyecto
+
+Después de clonar el repositorio, navega a la carpeta del proyecto y restaura los paquetes de NuGet:
+
+```bash
+cd CareerService
+dotnet restore
+```
+
+## Ejecutar la Aplicación
+
+Para ejecutar la aplicación, utiliza el siguiente comando:
+
+```bash
+dotnet run
+```
